@@ -11,4 +11,12 @@ contract Counter {
     function increment() public {
         number++;
     }
+
+    function decrement() public {
+        number -= 1;
+    }
+
+    function getNumber() public view returns(uint256){
+        return number;
+    }
 }
